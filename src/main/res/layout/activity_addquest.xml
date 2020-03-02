@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/nowyQuestTytul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wprowadź tytuł zadania"
+        android:onClick="usunTytulZadania"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:textColor="@color/colorWhite"
+        />
+    <EditText
+        android:id="@+id/nowyQuestTresc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usunTrescZadania"
+        android:text="treść zadania"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:onClick="DodajQuest"
+        android:layout_weight="1"
+        android:text="Dodaj"/>
+</LinearLayout>

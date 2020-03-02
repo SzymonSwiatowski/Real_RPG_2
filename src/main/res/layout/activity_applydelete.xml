@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@drawable/drzwi"
+    android:padding="16dp"
+    >
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorWhite2"
+        android:background="@color/colorSpecial_1"
+        android:text="Jeśli chcesz usunąć postać" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite2"
+        android:background="@color/colorSpecial_1"
+        android:gravity="center"
+        android:text="Przesuń suwak " />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite2"
+        android:background="@color/colorSpecial_1"
+        android:gravity="center"
+        android:text="i zatwierdź" />
+
+    <Switch
+        android:id="@+id/switchDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorSpecial_1"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:onClick="powrót"
+            android:text="Powrót"
+            android:background="@color/colorSpecial_1"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:onClick="zatwierdzUsuniecie"
+            android:text="zatwierdź"
+            android:background="@color/colorSpecial_1"/>
+
+
+    </LinearLayout>
+</LinearLayout>

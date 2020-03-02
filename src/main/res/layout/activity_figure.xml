@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/tlo_2"
+    android:orientation="vertical">
+
+
+        >
+        <TextView
+            android:id="@+id/nazwa_Figure"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:text="nazwa Postaci"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            />
+    <LinearLayout
+        android:id="@+id/LinearFigure"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+
+        >
+
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/frame"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/avatarFigure_IV"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="243dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginBottom="600dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/avatar1" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/Siła"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:text="Siła:"
+                android:textColor="@color/colorAccent"/>
+
+
+            <TextView
+                android:id="@+id/Zręczność"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:text="Zręczność:"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/Magia"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:text="Magia:"
+                android:textColor="@color/colorAccent"/>
+
+
+            <TextView
+                android:id="@+id/Spostrzegawczość"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:text="Spostrzegawczość:"
+                android:textColor="@color/colorAccent"/>
+
+
+            <TextView
+                android:id="@+id/Wytrzymałość"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:text="Wytrzymałość:"
+                android:textColor="@color/colorAccent"/>
+
+
+
+            <TextView
+                android:id="@+id/Charyzma"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:text="Charyzma:"
+                android:textColor="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/dostepnePunkty"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:text="   Wolne punkty:"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/buttonSiła_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:onClick="buttonSila_Figure"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/buttonZręczność_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:onClick="buttonZrecznosc_Figure"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/buttonMagia_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:onClick="buttonMagia_Figure"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/buttonSpostrzegawczość_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:onClick="buttonSpostrzegawczosc_Figure"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/buttonWytrzymałość_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:onClick="buttonWytrzymalosc_Figure"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="1"
+                />
+            <Button
+                android:id="@+id/buttonCharyzma_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:onClick="buttonCharyzma_Figure"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="1"
+                />
+            <TextView
+                android:id="@+id/cechyPunkty_Figure"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:background="@color/colorSpecial"
+                android:textColor="@color/colorAccent"
+                android:text="0"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="powrót"
+                android:layout_gravity="bottom"
+                android:onClick="Powrot_postac"
+                />
+    </LinearLayout>
